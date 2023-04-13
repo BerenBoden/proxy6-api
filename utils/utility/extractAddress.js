@@ -9,9 +9,13 @@ function extractAddress(response) {
       }
       const mubeng = `${type}://${user}:${pass}@${host}:${port}`;
       const proxychains = `${type} ${host} ${port} ${user} ${pass}`;
+      const address = `${type}://${host}:${port}@${user}:${pass}`;
+      const shortAddress = `$${host}:${port}@${user}:${pass}`;
       proxies.push({
         mubeng,
         proxychains,
+        address,
+        shortAddress,
         host,
         port,
         user,

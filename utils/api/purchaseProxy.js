@@ -8,7 +8,7 @@ async function purchaseProxy(url, country, count, period, type, version = 4) {
     );
     const proxy = extractAddress(response.data.list);
     console.log(
-      `Successfully purchased ${type} ${version} ${country} proxy for ${period} days: ${proxy}`
+      `Successfully purchased ${count} ${type} ipv${version} ${country} proxy for ${period} days: ${proxy.address}`
     );
   } catch (error) {
     console.error(error.message);

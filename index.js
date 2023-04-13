@@ -10,8 +10,6 @@ const getPurchasedProxies = require("./utils/api/getPurchasedProxies");
 dotenv.config();
 const BASE_URL = `https://proxy6.net/api/${process.env.API_KEY}`;
 
-// Your existing functions: appendJsonToFile, getPrice, buyProxy, purchaseProxy
-
 async function main(argv) {
   debugger;
   try {
@@ -40,7 +38,7 @@ async function main(argv) {
         break;
 
       case "getPurchasedProxies":
-        await getPurchasedProxies(BASE_URL);
+        await getPurchasedProxies(BASE_URL, argv?.format);
         break;
       default:
         console.error("Invalid command");

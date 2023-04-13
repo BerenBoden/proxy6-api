@@ -2,6 +2,8 @@
   {
     "mubeng": "http://EwGyc3:YYByqE@217.29.62.212:13721",
     "proxychains": "http 217.29.62.212 13721 EwGyc3 YYByqE",
+    "address": "http://217.29.62.212:13721@EwGyc3:YYByqE",
+    "shortAddress": "$217.29.62.212:13721@EwGyc3:YYByqE",
     "host": "217.29.62.212",
     "port": "13721",
     "user": "EwGyc3",
@@ -11,6 +13,8 @@
   {
     "mubeng": "http://BXmAHx:RmNSvB@217.29.62.212:13723",
     "proxychains": "http 217.29.62.212 13723 BXmAHx RmNSvB",
+    "address": "http://217.29.62.212:13723@BXmAHx:RmNSvB",
+    "shortAddress": "$217.29.62.212:13723@BXmAHx:RmNSvB",
     "host": "217.29.62.212",
     "port": "13723",
     "user": "BXmAHx",
@@ -20,10 +24,23 @@
   {
     "mubeng": "http://7n2ZWL:8jTzJs@217.29.62.212:13724",
     "proxychains": "http 217.29.62.212 13724 7n2ZWL 8jTzJs",
+    "address": "http://217.29.62.212:13724@7n2ZWL:8jTzJs",
+    "shortAddress": "$217.29.62.212:13724@7n2ZWL:8jTzJs",
     "host": "217.29.62.212",
     "port": "13724",
     "user": "7n2ZWL",
     "pass": "8jTzJs",
+    "type": "http"
+  },
+  {
+    "mubeng": "http://pCvxUJ:qUA2f6@149.28.161.95:10282",
+    "proxychains": "http 149.28.161.95 10282 pCvxUJ qUA2f6",
+    "address": "http://149.28.161.95:10282@pCvxUJ:qUA2f6",
+    "shortAddress": "$149.28.161.95:10282@pCvxUJ:qUA2f6",
+    "host": "149.28.161.95",
+    "port": "10282",
+    "user": "pCvxUJ",
+    "pass": "qUA2f6",
     "type": "http"
   }
 ]

@@ -1,0 +1,29 @@
+[
+  {
+    "mubeng": "http://EwGyc3:YYByqE@217.29.62.212:13721",
+    "proxychains": "http 217.29.62.212 13721 EwGyc3 YYByqE",
+    "host": "217.29.62.212",
+    "port": "13721",
+    "user": "EwGyc3",
+    "pass": "YYByqE",
+    "type": "http"
+  },
+  {
+    "mubeng": "http://BXmAHx:RmNSvB@217.29.62.212:13723",
+    "proxychains": "http 217.29.62.212 13723 BXmAHx RmNSvB",
+    "host": "217.29.62.212",
+    "port": "13723",
+    "user": "BXmAHx",
+    "pass": "RmNSvB",
+    "type": "http"
+  },
+  {
+    "mubeng": "http://7n2ZWL:8jTzJs@217.29.62.212:13724",
+    "proxychains": "http 217.29.62.212 13724 7n2ZWL 8jTzJs",
+    "host": "217.29.62.212",
+    "port": "13724",
+    "user": "7n2ZWL",
+    "pass": "8jTzJs",
+    "type": "http"
+  }
+]

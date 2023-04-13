@@ -1,11 +1,11 @@
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
-const fs = require("fs");
 const dotenv = require("dotenv");
-const getAvailableProxies = require("./utils/getAvailableProxies");
-const getPrice = require("./utils/getPrice");
-const purchaseProxy = require("./utils/purchaseProxy");
-const getAccountBalance = require("./utils/getAccountBalance");
+const getAvailableProxies = require("./utils/api/getAvailableProxies");
+const getPrice = require("./utils/api/getPrice");
+const purchaseProxy = require("./utils/api/purchaseProxy");
+const getAccountBalance = require("./utils/api/getAccountBalance");
+const getPurchasedProxies = require("./utils/api/getPurchasedProxies");
 
 dotenv.config();
 const BASE_URL = `https://proxy6.net/api/${process.env.API_KEY}`;
@@ -18,27 +18,17 @@ async function main(argv) {
     const command = argv._[0];
     switch (command) {
       case "getAvailableProxies":
-        const availableProxies = await getAvailableProxies(
-          BASE_URL,
-          argv.country,
-          argv.ip_version
-        );
-        console.log(`Available proxies: `, availableProxies);
+        await getAvailableProxies(BASE_URL, argv.country, argv.ip_version);
         break;
 
       case "getPrice":
-        const price = await getPrice(
-          BASE_URL,
-          argv?.count,
-          argv?.period,
-          argv?.ip_version
-        );
-        console.log(`Price: ${price}`);
+        await getPrice(BASE_URL, argv?.count, argv?.period, argv?.ip_version);
         break;
 
       case "purchaseProxy":
         await purchaseProxy(
           BASE_URL,
+          argv?.country,
           argv?.count,
           argv?.period,
           argv?.ip_version,
@@ -46,8 +36,11 @@ async function main(argv) {
         );
         break;
       case "getAccountBalance":
-        const balance = await getAccountBalance(BASE_URL);
-        console.log(`Balance: ${balance}`);
+        await getAccountBalance(BASE_URL);
+        break;
+
+      case "getPurchasedProxies":
+        await getPurchasedProxies(BASE_URL);
         break;
       default:
         console.error("Invalid command");

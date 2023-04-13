@@ -5,7 +5,8 @@ async function getAvailableProxies(url, country, ip_version) {
     const response = await axios.get(
       `${url}/getcount?country=${country}&version=${ip_version}`
     );
-    return response.data.count;
+    console.log(response.data.count);
+    return;
   } catch (err) {
     console.log(err);
     return;

@@ -29,8 +29,9 @@ async function main(argv) {
           argv?.country,
           argv?.count,
           argv?.period,
-          argv?.ip_version,
-          argv?.type
+
+          argv?.type,
+          argv?.ip_version
         );
         break;
       case "getAccountBalance":
@@ -38,7 +39,7 @@ async function main(argv) {
         break;
 
       case "getPurchasedProxies":
-        await getPurchasedProxies(BASE_URL, argv?.format);
+        await getPurchasedProxies(BASE_URL, argv?.format, argv.ip_version);
         break;
       default:
         console.error("Invalid command");

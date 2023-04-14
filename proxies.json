@@ -48,15 +48,63 @@
     "type": "http"
   },
   {
-    "mubeng": "http://VNA2DG:XKxJfJ@38.153.3.148:8000",
-    "proxychains": "http 38.153.3.148 8000 VNA2DG XKxJfJ",
-    "address": "http://38.153.3.148:8000@VNA2DG:XKxJfJ",
+    "mubeng": "socks://VNA2DG:XKxJfJ@38.153.3.148:8000",
+    "proxychains": "socks 38.153.3.148 8000 VNA2DG XKxJfJ",
+    "address": "socks://38.153.3.148:8000@VNA2DG:XKxJfJ",
     "shortAddress": "38.153.3.148:8000@VNA2DG:XKxJfJ",
     "version": "4",
     "host": "38.153.3.148",
     "port": "8000",
     "user": "VNA2DG",
     "pass": "XKxJfJ",
+    "type": "socks"
+  },
+  {
+    "mubeng": "socks://QANA0o:dqQEQ2@38.153.3.223:8000",
+    "proxychains": "socks 38.153.3.223 8000 QANA0o dqQEQ2",
+    "address": "socks://38.153.3.223:8000@QANA0o:dqQEQ2",
+    "shortAddress": "38.153.3.223:8000@QANA0o:dqQEQ2",
+    "version": "4",
+    "host": "38.153.3.223",
+    "port": "8000",
+    "user": "QANA0o",
+    "pass": "dqQEQ2",
+    "type": "socks"
+  },
+  {
+    "mubeng": "http://jXBfTX:P8Na8o@217.29.53.133:11809",
+    "proxychains": "http 217.29.53.133 11809 jXBfTX P8Na8o",
+    "address": "http://217.29.53.133:11809@jXBfTX:P8Na8o",
+    "shortAddress": "217.29.53.133:11809@jXBfTX:P8Na8o",
+    "version": "6",
+    "host": "217.29.53.133",
+    "port": "11809",
+    "user": "jXBfTX",
+    "pass": "P8Na8o",
     "type": "http"
+  },
+  {
+    "mubeng": "http://wK7e1x:K36Lb9@217.29.53.133:11810",
+    "proxychains": "http 217.29.53.133 11810 wK7e1x K36Lb9",
+    "address": "http://217.29.53.133:11810@wK7e1x:K36Lb9",
+    "shortAddress": "217.29.53.133:11810@wK7e1x:K36Lb9",
+    "version": "6",
+    "host": "217.29.53.133",
+    "port": "11810",
+    "user": "wK7e1x",
+    "pass": "K36Lb9",
+    "type": "http"
+  },
+  {
+    "mubeng": "socks://FD8AQn:YbnRV5@217.29.53.133:11811",
+    "proxychains": "socks 217.29.53.133 11811 FD8AQn YbnRV5",
+    "address": "socks://217.29.53.133:11811@FD8AQn:YbnRV5",
+    "shortAddress": "217.29.53.133:11811@FD8AQn:YbnRV5",
+    "version": "6",
+    "host": "217.29.53.133",
+    "port": "11811",
+    "user": "FD8AQn",
+    "pass": "YbnRV5",
+    "type": "socks"
   }
 ]

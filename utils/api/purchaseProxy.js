@@ -2,6 +2,7 @@ const axios = require("axios");
 const extractAddress = require("../utility/extractAddress");
 
 async function purchaseProxy(url, country, count, period, type, version = 4) {
+  console.log(type)
   try {
     const response = await axios.get(
       `${url}/buy?count=${count}&period=${period}&country=${country}&type=${type}&version=${version}`

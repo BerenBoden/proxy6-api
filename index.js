@@ -29,7 +29,6 @@ async function main(argv) {
           argv?.country,
           argv?.count,
           argv?.period,
-
           argv?.type,
           argv?.ip_version
         );

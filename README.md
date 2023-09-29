@@ -1,3 +1,5 @@
+Documentation is bad but still working on this...
+
 Proxy6 API CLI
 A command-line interface (CLI) application for purchasing and managing proxies using the Proxy6 API.
 
